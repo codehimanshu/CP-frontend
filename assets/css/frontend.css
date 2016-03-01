@@ -58,6 +58,10 @@ input.form-control{
 /*--------------------------------------------------------
                       Description Page                    
 ----------------------------------------------------------*/
+header{
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
 header .logo{
   max-width: 200px;
   margin: 9.7px 5px;
@@ -107,6 +111,61 @@ header .form-control:focus{
 }
 header .search-box form{
   margin:12px 0;
+}
+.main-section{
+  margin-bottom: 30px;
+}
+.main-section>h1{
+  font-size:24px;
+  margin-bottom: 25px;
+}
+.main-section .nav-tabs>li>a,.main-section .nav-tabs>li>a:hover{
+  background-color: #eee;
+  color:#555;
+  border-radius: 0;
+}
+.main-section .nav-tabs>li.active>a{
+  background-color: #fff;
+}
+.main-section .content-box{
+  background-color: #fff;
+  padding:20px 15px;
+  border:1px solid #ddd;
+  border-top:0;
+}
+.main-section .content-box h2{
+  font-size: 18px;
+  text-transform: none;
+  position: relative;
+}
+.main-section .content-box h3{
+  font-size: 16px;
+  margin:30px 0 10px;
+  text-transform: none;
+}
+.main-section .content-box h2:after{
+  position:absolute;
+  bottom: -10px;
+  left: 0;
+  content: "";
+  height: 2px;
+  border-bottom: 2px solid #f05f40;
+  width:100%;
+  max-width: 110px;
+}
+.main-section .content-box .highlight-box{
+  display: inline-block;
+  margin:5px 5px 5px 0;
+  color: #f05f40;
+  padding:8px 10px;
+  border:1px solid #f05f40;
+  font-weight: bold;
+  transition: all .3s;
+}
+.main-section .content-box .highlight-box:hover{
+  color:#fff;
+  background-color: #f05f40;
+  cursor: default;
 }
 footer{
   background-color: #4d3d43;
