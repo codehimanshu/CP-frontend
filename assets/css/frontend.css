@@ -70,7 +70,18 @@ input.form-control{
   padding: 20px;
 }
 
+.mcq{
+  text-align: left;
+}
 
+.content{
+  overflow: hidden;
+  border-top: 1px solid #ddd !important;
+}
+
+.sidebar{
+  margin-top: 0px !important;
+}
 
 /*--------------------------------------------------------
                       Description Page
@@ -145,6 +156,7 @@ header .search-box form{
   background-color: #fff;
 }
 .main-section .content-box{
+    font-family: "Roboto Slab";
   background-color: #fff;
   padding:20px 15px;
   border:1px solid #ddd;
@@ -180,7 +192,7 @@ header .search-box form{
 }
 .main-section .content-box h1 a.apply:hover{
   background-color: #ee4b28;
-}  
+}
 
 .main-section aside .box a,.main-section aside .box a:hover,.main-section aside .box a:focus{
   padding:2px;
