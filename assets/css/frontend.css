@@ -138,6 +138,9 @@ header .search-box form{
   color:#555;
   border-radius: 0;
 }
+.b-pad-10{
+  padding-bottom:10px !important;
+}
 .main-section .nav-tabs>li.active>a{
   background-color: #fff;
 }
