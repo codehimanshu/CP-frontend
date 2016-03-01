@@ -130,11 +130,8 @@ header .search-box form{
   margin:12px 0;
 }
 .main-section{
+  margin-top:30px;
   margin-bottom: 30px;
-}
-.main-section>h1{
-  font-size:24px;
-  margin-bottom: 25px;
 }
 .main-section .nav-tabs>li>a,.main-section .nav-tabs>li>a:hover{
   background-color: #eee;
@@ -150,19 +147,70 @@ header .search-box form{
   border:1px solid #ddd;
   border-top:0;
 }
-.main-section .content-box h2{
+.main-section aside{
+  background-color: #fff;
+  padding:20px 15px;
+  border:1px solid #ddd;
+  margin-top:42px;
+}
+.main-section .content-box h1,.main-section aside h1{
   font-size: 18px;
   text-transform: none;
   position: relative;
+  padding-bottom: 0px;
+  overflow: hidden;
+  margin-top:10px;
 }
-.main-section .content-box h3{
+.main-section aside h1{
+  padding-bottom: 14px;
+}
+.main-section .content-box h1 a.apply{
+  border-radius:0;
+  border: none;
+  color: #fff;
+  background-color: #f05f40;
+  font-weight: 700;
+  transition: background .4s;
+  outline: none;
+  float: right;
+  text-transform: none;
+}
+.main-section .content-box h1 a.apply:hover{
+  background-color: #ee4b28;
+}  
+
+.main-section aside .box a,.main-section aside .box a:hover,.main-section aside .box a:focus{
+  padding:2px;
+  color:#e74c3c;
+  text-transform: none;
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main-section .content-box h3,.main-section aside h3{
   font-size: 16px;
   margin:30px 0 10px;
   text-transform: none;
 }
-.main-section .content-box h2:after{
+.main-section aside .box{
+  margin:25px 0;
+  overflow: hidden;
+}
+.main-section aside .box p{
+  font-size: 13px;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+.main-section aside h3{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.main-section .content-box h1:after,.main-section aside h1:after{
   position:absolute;
-  bottom: -10px;
+  bottom:0;
   left: 0;
   content: "";
   height: 2px;
