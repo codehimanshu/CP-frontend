@@ -17,15 +17,25 @@ body{
 .logo{
   margin-top: 9px;
 }
-.login-button{
+.login-button,.login-button:focus,.login-button:hover{
   background-color: #e74c3c;
   color: #fff;
   text-transform: uppercase;
   transition: all .35s;
   font-weight: bold;
+  outline: none;
+  border-radius: 0;
+  border: 0;
+}
+.remember{
+  margin-left: 105px
 }
 .register-button{
   padding: 15px 30px;
+  display: block;
+  max-width: 200px;
+  margin:auto;
+  margin-bottom: 20px;
 }
 h1,h2,h3,h4,h5,h6{
   text-transform: uppercase;
@@ -82,7 +92,44 @@ input.form-control{
 .sidebar{
   margin-top: 0px !important;
 }
-
+.forgot,.forgot:hover{
+  margin-left: 174px;
+  margin-top: 5px;
+  display: inline-block;
+  color:#e74c3c;
+  text-decoration: none;
+}
+@media(max-width: 998px){
+  .login-form{
+    float: none !important;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  #mainNav>div{
+    text-align: center;
+  }
+  .logo{
+    display: block;
+    margin:auto;
+  }
+}
+@media(max-width: 768px){
+  .login-form{
+    display: block;
+    max-width: 400px;
+  }
+  .forgot{
+    margin-left: 0;
+  }
+  .login-button{
+    margin-top:10px;
+  }
+  .remember{
+    margin-left:0;
+  }
+}
 /*--------------------------------------------------------
                       Description Page
 ----------------------------------------------------------*/
