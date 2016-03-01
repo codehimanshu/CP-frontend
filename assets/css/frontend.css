@@ -1,0 +1,48 @@
+body{
+  background : url('../image/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.navigation{
+  background-color: transparent;
+  border: none;
+}
+.logo{
+  margin-top: 9px;
+}
+.login-button{
+  background-color: #e74c3c;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all .35s;
+  font-weight: bold;
+}
+.register-button{
+    padding: 15px 30px;
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+hr{
+    max-width: 25%;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+a{
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.register-form .form-group
+  input.form-control{
+    height: auto;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: bold;
+  }
+  .login-form .form-group
+    input.form-control{
+      height: auto;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
