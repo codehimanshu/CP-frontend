@@ -44,7 +44,12 @@ a{
 .register-form .form-group
 input.form-control{
   height: auto;
-  text-transform: uppercase;
+  padding: 15px;
+  font-weight: bold;
+}
+.register-form .form-group
+select.form-control{
+  height: auto;
   padding: 15px;
   font-weight: bold;
 }
@@ -55,8 +60,20 @@ input.form-control{
   font-weight: bold;
 }
 
+.step{
+  width: 100%;
+}
+
+.about-content{
+  font-family: "Roboto Slab";
+  text-align: center;
+  padding: 20px;
+}
+
+
+
 /*--------------------------------------------------------
-                      Description Page                    
+                      Description Page
 ----------------------------------------------------------*/
 header .logo{
   max-width: 200px;
@@ -160,7 +177,7 @@ footer p{
   }
   header .search-box {
     text-align: center;
-  }  
+  }
   header .search-box .form-group{
     display: inline-block;
   }
