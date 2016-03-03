@@ -7,6 +7,7 @@
     <title>Description Campuspuppy</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flipclock.css">
     <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,33 +36,84 @@
     </header>
     <section class="container main-section">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-8">
 
           <div class="content-box tab-content content">
 
-            <h3 style="text-align: left;">Test Name: Web Development-Backend: PHP</h3>
+            <div style="text-align: center;">
+            <p class="mcq-title">Web Development Backend: PHP</p>
+          </div>
 
             <div class="col-sm-12">
               <p class="mcq" style="text-align: left;"><strong>Question 1</strong></p>
               <p class="mcq" style="text-align: left;">About Us Content goes here. About Us Content goes here. About Us Content goes here. PC and Ayushi ki shadi. Mubharakh ho. CampusPuppy. Dummy Data. Good Morning India, how are you? We are about to live the website in a week.</p>
+              <div class="options">
+              <div>
+                <span class="opt">A</span>
+                <input type="radio" name="answer" id="optionA" value="A" />
+          <label for="optionA">Computer Styled Sections </label></div>
+          <div>
+            <span class="opt">B</span>
+            <input type="radio" name="answer" id="optionB" value="B" />
+      <label for="optionB">Computer Styled Sections </label></div>
+      <div>
+        <span class="opt">C</span>
+        <input type="radio" name="answer" id="optionC" value="C" />
+  <label for="optionC">Computer Styled Sections </label></div>
+  <div>
+    <span class="opt">D</span>
+    <input type="radio" name="answer" id="optionD" value="D" />
+<label for="optionD">Computer Styled Sections </label></div>
+</div>
             </div>
+
+            <div class="col-sm-1">
+              <button class="btn btn-default login-button">Previous</button>
+            </div>
+            <div class="col-sm-1 col-sm-offset-10">
+              <button class="btn btn-default login-button">Next</button>
+            </div>
+            <button class="btn btn-default login-button register-button" name="" id="login">SUBMIT</button>
           </div>
         </div>
-        <aside class="col-lg-3 hidden-xs sidebar">
-          <h1>Upcoming Events</h1>
-          <div class="box">
-            <img src="assets/image/events.jpg" class="img-responsive">
-            <h3>Event Title Goes Here</h3>
-            <p>Details of the Event will be shown here. Samjhe ya nahi! Ab to samajh jao bhaiya ji, kitna samjhaye hum.</p>
-            <a href="javascript:">Know more</a>
+        <aside class="col-lg-4 hidden-xs sidebar">
+          <h1>Time Left</h1>
+          <div style=" display: block; margin: auto;">
+
+              <div class="your-clock" style="margin: 35px;"></div>
+
           </div>
-          <h1>Promotions</h1>
-          <div class="box">
-            <img src="assets/image/events.jpg" class="img-responsive">
-            <h3>Event Title Goes Here</h3>
-            <p>Details of the Event will be shown here. Samjhe ya nahi! Ab to samajh jao bhaiya ji, kitna samjhaye hum.</p>
-            <a href="javascript:">Know more</a>
-          </div>
+          <h1>Questions</h1>
+<ul class="question-ul">
+    <li class="question-li"><a class="switch-question">1</a></li>
+    <li class="question-li"><a class="switch-question answered">2</a></li>
+    <li class="question-li"><a class="switch-question answered">3</a></li>
+    <li class="question-li"><a class="switch-question answered">4</a></li>
+    <li class="question-li"><a class="switch-question">5</a></li>
+    <li class="question-li"><a class="switch-question">6</a></li>
+    <li class="question-li"><a class="switch-question">7</a></li>
+    <li class="question-li"><a class="switch-question">8</a></li>
+    <li class="question-li"><a class="switch-question">9</a></li>
+    <li class="question-li"><a class="switch-question answered">10</a></li>
+    <li class="question-li"><a class="switch-question">11</a></li>
+    <li class="question-li"><a class="switch-question">12</a></li>
+    <li class="question-li"><a class="switch-question">13</a></li>
+    <li class="question-li"><a class="switch-question">14</a></li>
+    <li class="question-li"><a class="switch-question">15</a></li>
+        </ul>
+
+
+
+<h1>Guidelines</h1>
+<div>
+<ol class="guidelines">
+  <li>Total number of 15 questions need to be attempted in 5 minutes.</li>
+  <li>No negative marking.</li>
+</ol>
+
+</div>
+
+
         </aside>
       </div>
     </section>
@@ -75,6 +127,17 @@
       </ul>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+
+    		<script src="assets/js/flipclock.min.js"></script>
+
+    <script type="text/javascript">
+	var clock = $('.your-clock').FlipClock(300, {
+		countdown: true,
+		clockFace: 'MinuteCounter'
+	});
+</script>
+    </script>
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>

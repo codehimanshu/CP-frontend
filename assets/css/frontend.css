@@ -88,14 +88,131 @@ input.form-control{
   width: 100%;
 }
 
+.options label{
+  transition: background-color .3s, ease-in;
+font-size: 15px;
+display: inline-block;
+cursor: pointer;
+position: relative;
+background-color: none;
+color: #222;
+border: 1px solid #d4d4d4;
+padding: 2%;
+width: 60%;
+text-align: left;
+margin: 8px;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options input[type="radio"]:checked+label{
+  background: #4d3d43;
+  color: #fff;
+}
+
+.opt{
+background-color: #4d3d43;
+    padding: 2.2%;
+    border: 1px solid #d4d4d4;
+    color: white;
+  }
+
+  .switch-question{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    padding: 10px;
+    color:#fff;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    text-align:center;
+    background:#4d3d43;
+  }
+
+  .answered{
+    background: #27ae60;
+  }
+
+  .question-ul{
+    max-width: 250px;
+    list-style: none;
+    padding: 0px;
+    display: block;
+    margin: auto;
+  }
+
+  .question-li{
+    display: inline-block;
+    margin: 6px auto;
+  }
+
 .about-content{
   font-family: "Roboto Slab";
   text-align: center;
   padding: 20px;
 }
 
+.guidelines{
+  font-family: "Roboto Slab";
+  font-weight: bold;
+}
+
+.cover-image{
+  position: relative;
+    width: 100%;
+}
+
+.user-name{
+
+  height: 63px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0,0,0.8);
+    color: white;
+}
+
+.user-name h2{
+    font-family: "Roboto Slab";
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.profile-image{
+  margin-top: 0px;
+    position: absolute;
+    bottom: -55px;
+    left: 42%;
+    z-index: 100;
+    border-radius: 180px;
+    border: 5px solid white;
+}
+
+.add-to-circle{
+width: 10%;
+position: absolute;
+
+bottom: -22px;
+left: 89%;
+margin-bottom: 32px;
+background-color: #f05f40;
+padding: 10px;
+}
+
 .mcq{
   text-align: left;
+}
+
+.mcq-title{
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all .35s;
+  font-weight: bold;
 }
 
 .content{
