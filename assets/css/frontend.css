@@ -74,6 +74,15 @@ input.form-control{
   text-align: left;
 }
 
+.mcq-title{
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all .35s;
+  font-weight: bold;
+}
+
 .content{
   overflow: hidden;
   border-top: 1px solid #ddd !important;
