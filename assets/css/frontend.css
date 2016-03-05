@@ -438,9 +438,6 @@ footer a,footer a:hover,footer a:focus{
   transition: color .5s;
   font-weight: normal;
 }
-footer a:hover{
-  color:#f05f40;
-}
 footer a>i{
   vertical-align: middle;
   margin-left:5px;
@@ -540,18 +537,29 @@ footer p{
 }
 .browse-internships .filter-box .submenu ul{
   border-top:1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 .browse-internships .filter-box .submenu{
-  max-height: 285px;
+  max-height: 240px;
   overflow-y:auto; 
   position:absolute;
   right: -250px;
   bottom:-243px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   z-index: 10000;
   width: 100%;
   display: none;
   max-width: 285px;
+  background: #fff;
+}
+.browse-internships .filter-box .submenu .form-group{
+  padding:5px;
+  margin-bottom: 5px;
+}
+.browse-internships .filter-box .submenu .form-group .form-control{
+  box-shadow: none;
+  border-radius: 0;
 }
 .browse-internships .filter-box .glyphicon-menu-hamburger{
   font-size:13px;
