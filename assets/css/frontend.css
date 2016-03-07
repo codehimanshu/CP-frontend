@@ -55,6 +55,23 @@ h1,h2,h3,h4,h5,h6{
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.dashboard-image{
+  max-height: 220px;
+}
+
+.group-circle{
+  height: 135px;
+  width: 270px;
+  color: white;
+  padding: 60px 20px;
+
+}
+
+.group-row{
+  margin-bottom: 10px;
+}
+
 hr{
   max-width: 25%;
   border-color: #f05f40;
@@ -647,7 +664,7 @@ footer p{
   text-align: center;
   background-color: #2C3E50;
   color:#fff;
-  font-weight: 300; 
+  font-weight: 300;
   font-family: sans-serif;
 }
 .dashboard .main-section .content-box .box a{
