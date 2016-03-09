@@ -64,12 +64,25 @@ h1,h2,h3,h4,h5,h6{
   height: 135px;
   width: 270px;
   color: white;
-  padding: 60px 20px;
+  padding: 0px;
+  background-position: center;
+  position: relative;
 
 }
 
 .group-row{
   margin-bottom: 10px;
+}
+
+.groupMember{
+  position: absolute;
+  border-radius: 50%;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -65px 0px 0px -50px;
 }
 
 hr{
@@ -209,6 +222,20 @@ background-color: #4d3d43;
     font-family: "Roboto Slab";
     padding-left: 15px;
     font-size: 20px;
+
+}
+
+.groupMember-bottom{
+
+  height: 25px;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0,0,0.8);
+    color: white;
+    position: absolute;
+    font-family: "Roboto Slab";
+    padding-left: 10px;
+    font-size: 15px;
 
 }
 
