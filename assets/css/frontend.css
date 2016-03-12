@@ -255,6 +255,7 @@ background-color: #4d3d43;
 
 .event-image{
   padding: 0px;
+  position: relative;
 }
 
 .event-box{

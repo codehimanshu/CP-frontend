@@ -38,8 +38,8 @@
       <div class="row">
         <div class="col-lg-2">
           <div class="list-group">
-                    <a href="index.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">All Events</a>
-                    <a href="about.html" class="list-group-item" style="text-transform: none;">My Events</a>
+                    <a href="index.html" class="list-group-item" style="text-transform: none;">All Events</a>
+                    <a href="about.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">My Events</a>
                     <a href="services.html" class="list-group-item" style="text-transform: none;">Create Event</a>
                 </div>
         </div>
@@ -52,9 +52,12 @@
             <div class="event-box">
             <div class="row">
 
-              <div class="col-sm-5 event-image">
-                <img src="assets/image/events.jpg" style="width: 100%; max-height: 220px;">
-                <div class="event-bottom">11 MAR</div>
+              <div class="col-sm-5">
+                <div class="event-image"><img src="assets/image/events.jpg" style="width: 100%; max-height: 220px;">
+                <div class="event-bottom">11 MAR</div></div>
+                  <div style="margin-top: 10px;"><button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                  </div>
               </div>
               <div class="col-sm-7" style="padding-left: 15px;">
                 <h4 style="margin-top: 8px;">Event Title Goes Here</h4>
@@ -72,33 +75,6 @@
               </div>
             </div>
           </div>
-          <div class="event-box">
-          <div class="row">
-
-            <div class="col-sm-5 event-image">
-              <img src="assets/image/events.jpg" style="width: 100%; max-height: 220px;">
-              <div class="event-bottom">11 MAR</div>
-            </div>
-            <div class="col-sm-7" style="padding-left: 15px;">
-              <h4 style="margin-top: 8px;">Event Title Goes Here</h4>
-              <p>Agadm Bagbam, jadoo ki tigdam. Agadm Bagbam, jadoo ki tigdam. Agadm... </p>
-              <div class="col-sm-8">
-              <div style="padding: 5px;"><i class="fa fa-map-marker"  style="font-size: 22px;"></i> JSS Academy of Technical Education, Noida</div>
-              <div style="padding: 5px;"><i class="fa fa-link"  style="font-size: 22px;"></i> <a style="text-transform: none;">http://www.abc.com/</a></div>
-              <div style="padding: 5px;"><i class="fa fa-calendar"  style="font-size: 22px;"></i> 11 March 2016</div>
-              <div style="padding: 5px;"><i class="fa fa-clock-o"  style="font-size: 22px;"></i> 05:00 pm</div>
-            </div>
-            <div class="col-sm-4">
-                <button class="login-button register-button" data-toggle="modal" data-target="#eventDetails" style="margin-top: 80px;">Know More</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-
 
 </div>
         </div>
@@ -124,6 +100,23 @@
     </div>
     </div>
     </div>
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Delete</h4>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete the event?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Sure</button>
+      </div>
+    </div>
+  </div>
+</div>
     <footer>
       <p>Follow Us ON : <a href="javascript:"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="javascript:"><i class="fa fa-twitter-square fa-2x"></i></a></p>
       <ul>
