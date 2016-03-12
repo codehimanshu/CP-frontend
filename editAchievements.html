@@ -43,22 +43,20 @@
 
             <div class="col-md-3">
                  <div class="list-group">
-                     <a href="about.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">Work Experience</a>
-                      <a href="index.html" class="list-group-item" style="text-transform: none;">Projects</a>
-                      <a href="index.html" class="list-group-item" style="text-transform: none;">Achievements</a>
+                     <a href="about.html" class="list-group-item" style="text-transform: none;">Work Experience</a>
+                     <a href="index.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">Projects</a>
+                     <a href="index.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">Achievements</a>
                  </div>
              </div>
              <div class="col-md-9">
                <div style="margin-top: 5px; border-bottom: 1px solid #d0d0d0;">
                   <div style="float: right;"><button class="btn btn-success" data-toggle="modal" data-target="#editModal" style="margin: 5px;">Edit</button><button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" style="margin: 5px;">Delete</button></div>
-                 <p style="text-transform: uppercase;"><strong>ABC Company</strong></p>
-                 <p>Intern</p>
-                 <p>May 2015-June 2015</p>
+                 <p style="text-transform: uppercase;"><strong>Project Name</strong></p>
+                 <p><a style="text-transform: none;">http://projectlink.in</a></p>
                  <p class="text-muted">Details of the Event will be shown here. Samjhe ya nahi! Ab to samajh jao bhaiya ji, kitna samjhaye hum.Details of the Event will be shown here. Samjhe ya nahi! Ab to samajh jao bhaiya ji, kitna samjhaye hum.</p>
 
                </div>
-
-               <button class="btn login-button" data-toggle="modal" data-target="#addModal" style="margin-top: 10px; float: right;">Add Work Experience</button>
+               <button class="btn login-button" data-toggle="modal" data-target="#addModal" style="margin-top: 10px; float: right;">Add Project</button>
               </div>
 
 
@@ -90,7 +88,7 @@
         <h4 class="modal-title" id="myModalLabel">Delete</h4>
       </div>
       <div class="modal-body">
-        Are you sure you want to delete the work experience?
+        Are you sure you want to delete the project?
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -110,114 +108,19 @@
     <form name="sentMessage">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Company Name:</label>
-                            <input type="text" class="form-control" value="ABC Company">
+                            <label>Project Name:</label>
+                            <input type="text" class="form-control" value="Project Name">
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Working Position</label>
-                            <input type="text" class="form-control" value="Intern">
+                            <label>Project Link</label>
+                            <input type="url" class="form-control" value="http://projectlink.in">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                    <label>Starting Date</label>
-                  </div>
-                  <div class="col-md-6">
-                  <label>Ending Date</label>
-                </div>
-                    <div class="col-md-3">
 
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Month</label>
-                            <select class="form-control">
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
 
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-md-2">
-                  <div class="control-group form-group">
-                      <div class="controls">
-                          <label>Year</label>
-                          <select class="form-control">
-                              <option>2016</option>
-                              <option>2015</option>
-                              <option>2014</option>
-                              <option>2013</option>
-                              <option>2012</option>
-                              <option>2011</option>
-                              <option>2010</option>
-                              <option>2009</option>
-                              <option>2008</option>
-                              <option>2007</option>
-                              <option>2006</option>
-                              <option>2005</option>
-                          </select>
-
-                      </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3 col-md-offset-2">
-
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <label>Month</label>
-                        <select class="form-control">
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                        </select>
-
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-              <div class="control-group form-group">
-                  <div class="controls">
-                      <label>Year</label>
-                      <select class="form-control">
-                          <option>2016</option>
-                          <option>2015</option>
-                          <option>2014</option>
-                          <option>2013</option>
-                          <option>2012</option>
-                          <option>2011</option>
-                          <option>2010</option>
-                          <option>2009</option>
-                          <option>2008</option>
-                          <option>2007</option>
-                          <option>2006</option>
-                          <option>2005</option>
-                      </select>
-
-                  </div>
-              </div>
-            </div>
             <div class="control-group form-group">
                 <div class="controls">
                     <label>Description</label>
