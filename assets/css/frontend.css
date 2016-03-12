@@ -578,6 +578,15 @@ footer p{
   margin-top:50px;
   margin-bottom: 50px;
 }
+.browse-internships>h1{
+  font-size:20px;
+  margin:0;
+  text-align: center;
+  font-family: 'Roboto Slab';
+}
+.browse-internships .list-group{
+  max-width: 250px;
+}
 .browse-internships .filter-box{
   max-width: 250px;
   position: relative;
@@ -720,4 +729,25 @@ footer p{
 }
 .dashboard .main-section .content-box h1:after{
   display: none;
+}
+/*----------------------------------------------
+                My Internships
+-----------------------------------------------*/
+
+.applied_internships{
+  background: #fff;
+  padding:10px;
+  border:1px solid #ddd;
+}
+.applied_internships table tr td{
+  vertical-align: middle;
+  padding:5px !important;
+}
+.applied_internships table .btn,.applied_internships .pagination a{
+  text-transform: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+.applied_internships .pagination a{
+  
 }
