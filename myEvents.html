@@ -55,7 +55,7 @@
               <div class="col-sm-5">
                 <div class="event-image"><img src="assets/image/events.jpg" style="width: 100%; max-height: 220px;">
                 <div class="event-bottom">11 MAR</div></div>
-                  <div style="margin-top: 10px;"><button class="btn btn-success">Edit</button>
+                  <div style="margin-top: 10px;"><button data-toggle="modal" data-target="#editModal" class="btn btn-success">Edit</button>
                     <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</button>
                   </div>
               </div>
@@ -117,6 +117,95 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="myModalLabel" style="text-transform: none;">Edit Event</h4>
+  </div>
+  <div class="modal-body">
+    <form method="post" action="/home/addEvent" enctype="multipart/form-data">
+<div class="row">
+
+
+      <div class="col-md-12">
+          <div class="form-group">
+              <label>Event Title</label>
+              <input type="text" class="form-control" name="title" placeholder="Event Title" required>
+          </div>
+      </div>
+
+      <div class="col-md-12">
+          <div class="form-group">
+              <label>Event Description</label>
+              <textarea class="form-control" name="event_description" id="description" placeholder="Event Description" required>
+              </textarea>
+          </div>
+      </div>
+      <div class="col-md-12">
+          <div class="form-group">
+              <label>Location</label>
+              <input type="text" class="form-control" name="location" placeholder="Location">
+          </div>
+      </div>
+      <div class="col-md-12">
+          <div class="form-group">
+              <label>Website/Link (in any)</label>
+              <input type="url" class="form-control" name="link" placeholder="Website/Link (if any)">
+          </div>
+      </div>
+
+      <div class="col-md-12">
+          <img src="assets/image/events.jpg" style="width: 100%;">
+          <div class="form-group">
+              <label>Change Event Image</label>
+              <input type="file" class="form-control" name="image">
+          </div>
+      </div>
+
+
+      <div class="col-md-4">
+          <div class="form-group">
+              <label>Event Date</label>
+              <input type="date" class="form-control" name="event_date">
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="form-group">
+              <label>Event Time</label>
+              <input type="time" class="form-control" name="event_time">
+          </div>
+      </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+
+          <a href="javascript:void(0);" style="margin-top: 24px; text-transform: none;" class="add_button btn btn-success">Add End Time</a>
+        </div>
+        </div>
+
+
+</div>
+        <div class="row">
+
+          <div class="field_wrapper">
+          </div>
+        </div>
+
+
+
+    </form>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+    <button type="button" class="btn btn-danger">Edit</button>
+  </div>
+</div>
+</div>
+</div>
     <footer>
       <p>Follow Us ON : <a href="javascript:"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="javascript:"><i class="fa fa-twitter-square fa-2x"></i></a></p>
       <ul>
@@ -128,6 +217,33 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var maxField = 2;
+        var addButton = $('.add_button');
+        var wrapper = $('.field_wrapper');
+        var fieldHTML = '<div class="end"><div class="col-md-4"><div class="form-group"><label>Event End Date</label><input type="date" class="form-control" name="event_end_date"></div></div><div class="col-md-4"><div class="form-group"><label>Event End Time</label><input type="time" class="form-control" name="event_end_time"></div></div><div class="col-md-4"><div class="form-group"><label>&nbsp;</label><a href="javascript:void(0);" style="text-transform: none; margin-top: 24px;" class="remove_button btn btn-danger">Remove End Time</a></div></div></div>';
+        var x = 1;
+        $(addButton).click(function(){
+            if(x < maxField){
+                x++;
+                $(wrapper).append(fieldHTML);
+            }
+        });
+        $(wrapper).on('click', '.remove_button', function(e){
+            e.preventDefault();
+            $(".end").remove();
+            x--;
+        });
+    });
+    </script>
+    <script>
+   $(document).ready(function() {
+
+      CKEDITOR.replace('description');
+  });
+  </script>
+    <script src="assets/ckeditor/ckeditor.js"></script>
 
 
 

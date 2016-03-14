@@ -39,40 +39,36 @@
 
           <div class="content-box tab-content content">
 
-            <h3 style="text-align: center;">SETTINGS</h3><hr>
+            <h3 style="text-align: center;">EDIT PROFILE</h3><hr>
 
             <div class="col-md-3">
                  <div class="list-group">
-                     <a href="about.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">Change Password</a>
-                      <a href="index.html" class="list-group-item" style="text-transform: none;">Deactivate Account</a>
-                      <a href="about.html" class="list-group-item" style="text-transform: none;">Privacy Settings</a>
+                     <a href="about.html" class="list-group-item" style="text-transform: none;">Work Experience</a>
+                      <a href="index.html" class="list-group-item" style="text-transform: none;">Projects</a>
+                      <a href="index.html" class="list-group-item" style="text-transform: none;">Achievements</a>
+                      <a href="index.html" class="list-group-item" style="text-transform: none;">Profile Image</a>
+                      <a href="index.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">Cover Image</a>
+                      <a href="index.html" class="list-group-item" style="text-transform: none;">Personal Information</a>
                  </div>
              </div>
              <div class="col-md-9">
-               <form name="sentMessage">
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Old Password:</label>
-                            <input type="password" class="form-control" placeholder="Old Password">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>New Password:</label>
-                            <input type="password" class="form-control" placeholder="New Password">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Confirm New Password:</label>
-                            <input type="email" class="form-control" placeholder="Confirm New Password">
-                        </div>
-                    </div>
-                    <button class="btn login-button" style="float:right;">Change Password</button>
 
-                </form>
-              </div>
+               <img src="assets/image/back.JPG" style="width:100%;">
+               <p style="font-weight: bold; font-family: 'Roboto Slab'; margin-top: 5px; text-align: center;">Current Cover Image<p>
+
+
+                  <form style="margin-top: 40px;">
+  <div class="form-group">
+
+    <input type="file" class="form-control">
+  </div>
+
+  <button style="float:right;" type="submit" class="btn btn-default login-button">UPLOAD</button>
+</form>
+
+835 X 283 k ratio mein image upload hogi
+
+                </div>
 
 
           </div>
@@ -95,6 +91,9 @@
         </aside>
       </div>
     </section>
+
+
+
     <footer>
       <p>Follow Us ON : <a href="javascript:"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="javascript:"><i class="fa fa-twitter-square fa-2x"></i></a></p>
       <ul>
@@ -105,6 +104,13 @@
       </ul>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+    <script>
+   $(document).ready(function() {
+    CKEDITOR.replace('summary');
+      CKEDITOR.replace('description');
+  });
+  </script>
+    <script src="assets/ckeditor/ckeditor.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
