@@ -7,6 +7,7 @@
     <title>Description Campuspuppy</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flipclock.css">
     <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="dashboard">
     <header class="container-fluid">
       <div class="row">
         <div class="col-md-2 col-sm-3">
@@ -36,48 +37,77 @@
     <section class="container main-section">
       <div class="row">
         <div class="col-lg-9">
-
           <div class="content-box tab-content content">
 
-            <h3 style="text-align: center;">SETTINGS</h3><hr>
-
-            <div class="col-md-3">
-                 <div class="list-group">
-                     <a href="about.html" class="list-group-item" style="text-transform: none; background-color: #4d3d43; color: #fff;">Change Password</a>
-                      <a href="index.html" class="list-group-item" style="text-transform: none;">Deactivate Account</a>
-                      <a href="about.html" class="list-group-item" style="text-transform: none;">Privacy Settings</a>
-                 </div>
-             </div>
-             <div class="col-md-9">
-               <form name="sentMessage">
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Old Password:</label>
-                            <input type="password" class="form-control" placeholder="Old Password">
-                            <p class="help-block"></p>
+                        <h3 style="text-align: center;">DASHBOARD</h3><hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="box">
+                            <a href="javascript:">
+                              <img src="assets/image/dashboard-images/jobs.PNG" class="img-responsive dashboard-image">
+                              <h2>Jobs</h2>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="box">
+                            <a href="javascript:">
+                              <img src="assets/image/dashboard-images/internship.PNG" class="img-responsive dashboard-image">
+                              <h2>Internships</h2>
+                              </a>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>New Password:</label>
-                            <input type="password" class="form-control" placeholder="New Password">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Confirm New Password:</label>
-                            <input type="email" class="form-control" placeholder="Confirm New Password">
-                        </div>
-                    </div>
-                    <button class="btn login-button" style="float:right;">Change Password</button>
-
-                </form>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box">
+                  <a href="javascript:">
+                    <img src="assets/image/dashboard-images/skills.PNG" class="img-responsive dashboard-image">
+                    <h2>My Skills</h2>
+                  </a>
+                </div>
               </div>
+              <div class="col-sm-6">
+                <div class="box">
+                  <a href="javascript:">
+                  <img src="assets/image/dashboard-images/userProfile.PNG" class="img-responsive dashboard-image">
+                  <h2>User Profile</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box">
+                  <a href="javascript:">
+                  <img src="assets/image/dashboard-images/groups.PNG" class="img-responsive dashboard-image">
+                  <h2>My Groups</h2>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box">
+                  <a href="javascript:">
+                  <img src="assets/image/dashboard-images/events.PNG" class="img-responsive dashboard-image">
+                  <h2>Events</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box">
+                  <a href="javascript:">
+                  <img src="assets/image/dashboard-images/settings.PNG" class="img-responsive dashboard-image">
+                  <h2>Settings</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <aside class="col-lg-3 hidden-xs sidebar">
+        <aside class="col-lg-3 hidden-xs" style="margin-top: 0px;">
           <h1>Upcoming Events</h1>
           <div class="box">
             <img src="assets/image/events.jpg" class="img-responsive">
@@ -105,6 +135,17 @@
       </ul>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+
+    		<script src="assets/js/flipclock.min.js"></script>
+
+    <script type="text/javascript">
+	var clock = $('.your-clock').FlipClock(300, {
+		countdown: true,
+		clockFace: 'MinuteCounter'
+	});
+</script>
+    </script>
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
