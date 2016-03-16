@@ -284,6 +284,15 @@ background-color: #f05f40;
 padding: 8px;
 }
 
+.message{
+position: absolute;
+bottom: -22px;
+left: 73%;
+margin-bottom: 28px;
+background-color: #f05f40;
+padding: 8px;
+}
+
 .mcq{
   text-align: left;
 }
@@ -749,5 +758,5 @@ footer p{
   font-size: 14px;
 }
 .applied_internships .pagination a{
-  
+
 }
