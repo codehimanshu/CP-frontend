@@ -751,3 +751,88 @@ footer p{
 .applied_internships .pagination a{
   
 }
+
+/*--------------------------------------------
+                Browse Skills
+----------------------------------------------*/
+
+.browse_skills .main-section .skills-container{
+  background-color: #fff;
+  padding:15px;
+  border: 1px solid #ddd;
+}
+.browse_skills .main-section .skills-container .skill-search-form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.browse_skills .main-section .skills-container .skill-search-form>*{
+  margin:10px 0;
+}
+.browse_skills .main-section .skills-container .skill-search-form>label{
+  margin:15px 10px 15px 0;
+}
+.browse_skills .main-section .skills-container .skill-search-form>input{
+  width: auto;
+  flex-grow: 1;
+  margin:10px 10px 10px 0;
+}
+.browse_skills .main-section .skills-container h3{
+  font-size: 16px;
+  margin: 30px 0 10px;
+  text-transform: none;
+  text-align: center;
+  font-family: 'Roboto Slab';
+}
+.browse_skills .main-section .skills-container h4{
+  font-size: 15px;
+  text-transform: none;
+}
+.browse_skills .main-section .skills-container .skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;  
+}
+.browse_skills .main-section .skills-container .skill-search-form button{
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  background-color: #f05f40;
+  font-weight: 700;
+  transition: background .4s;
+  outline: none; 
+}
+.browse_skills .main-section .skills-container .skills .skill-box{
+  max-width: 150px;
+  height: 100px;
+  font-family: 'Roboto-Slab';
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.browse_skills .main-section .skills-container .skills .skill-box:hover{
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);  
+}
+.browse_skills .main-section .skills-container .skills .skill-box.gold{
+   /*background-color: #e67e22;*/
+   border:3px solid #e67e22;
+}
+.browse_skills .main-section .skills-container .skills .skill-box.silver{
+  /*background-color: #C0C0C0;*/
+  border:3px solid #C0C0C0;
+}
+.browse_skills .main-section .skills-container .skills .skill-box a{
+  margin:0;
+  text-align: center;
+  color:#000;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 400;
+}
