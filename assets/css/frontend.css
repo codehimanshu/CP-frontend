@@ -410,13 +410,14 @@ header .search-box form{
   margin:12px 0;
 }
 header .section3{
-  padding:0;
+  text-align: center;
 }
 header .section3 .notifications,header .section3 .notifications:focus,header .section3 .notifications:hover{
-  padding: 5px 2px 5px 5px;
-  font-size: 15px;
+  padding:10px;
+  font-size: 20px;
   margin-right: 5px;
   color:#e74c3c;
+  display: inline-block;
   text-decoration: none;
   transition: background .4s;
   text-align: center;
@@ -480,8 +481,8 @@ header .section3 .dropdown-menu{
 }
 .notifications-menu>a>.label {
     position: absolute;
-    top: -5px;
-    right: 0px;
+    top: 8px;
+    right: 8px;
     text-align: center;
     font-size: 9px;
     padding: 2px 3px;
